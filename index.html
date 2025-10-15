@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/media.css">
+
+    <link rel="icon" href="/assets/logo/portfolio__favicon.svg">
+    <title>dylunez</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav__head">
+                <a class="nav__logo" href="#hero">
+                    <img src="/assets/logo/portfolio__logo-light.svg" alt="Logo">
+                </a>
+                <ul class="nav__menu">
+                    <li class="nav__item"><a class="nav__item-link" href="#about">Sobre mí</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="#services">Servicios</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="#projects">Proyectos</a></li>
+                </ul>
+                <a class="btn nav__btn--contact" href="https://www.linkedin.com/in/dylunez/" target="_blank"
+                    rel="noopener noreferrer">Contáctame</a>
+                <button id="nav-btn-burger" class="btn nav__btn--toggle" aria-expanded="false"
+                    aria-controls="nav-overlay">
+                    <svg class="nav__btn--burger" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M19.9997 17.0005C20.552 17.0005 21.0005 17.4478 21.0005 18.0001C21.0005 18.5524 20.552 18.9997 19.9997 18.9997H4.0001C3.44781 18.9997 3.00049 18.5524 3.00049 18.0001C3.00049 17.4478 3.44781 17.0005 4.0001 17.0005H19.9997ZM19.9997 11.0005C20.552 11.0005 21.0005 11.4478 21.0005 12.0001C21.0005 12.5524 20.552 12.9997 19.9997 12.9997H4.0001C3.44781 12.9997 3.00049 12.5524 3.00049 12.0001C3.00049 11.4478 3.44781 11.0005 4.0001 11.0005H19.9997ZM19.9997 5.00049C20.552 5.00049 21.0005 5.44781 21.0005 6.0001C21.0005 6.55238 20.552 6.99971 19.9997 6.99971H4.0001C3.44781 6.99971 3.00049 6.55238 3.00049 6.0001C3.00049 5.44781 3.44781 5.00049 4.0001 5.00049H19.9997Z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="nav-overlay" class="overlay" hidden>
+                <div class="overlay__head">
+                    <button id="overlay-btn-close" class="btn nav__btn--toggle" aria-controls="nav-overlay">
+                        <svg class="overlay__btn--close" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="overlay__content">
+                    <ul class="overlay__menu">
+                        <li class="overlay__item"><a class="overlay__item-link" href="#about">Sobre mí</a></li>
+                        <li class="overlay__item"><a class="overlay__item-link" href="#services">Servicios</a></li>
+                        <li class="overlay__item"><a class="overlay__item-link" href="#projects">Proyectos</a></li>
+                    </ul>
+                    <a class="btn overlay__btn--contact" href="https://www.linkedin.com/in/dylunez/" target="_blank"
+                        rel="noopener noreferrer">Contáctame</a>
+                </div>
+                <div class="overlay__social-media">
+                    <a class="overlay__social-link" href="https://www.behance.net/dylunez" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg class="overlay__social-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.9401 7.35602C10.9709 7.35602 6.94611 11.3648 6.94611 16.3143C6.94611 20.2783 9.52065 23.6265 13.0958 24.8134C13.5455 24.8918 13.7141 24.6231 13.7141 24.3879C13.7141 24.1752 13.7029 23.4697 13.7029 22.7194C11.4431 23.1338 10.8585 22.1707 10.6786 21.6668C10.5774 21.4093 10.139 20.6142 9.75674 20.4015C9.44195 20.2335 8.99225 19.8192 9.7455 19.808C10.4538 19.7968 10.9597 20.4575 11.1283 20.7262C11.9378 22.0812 13.2307 21.7004 13.7478 21.4653C13.8265 20.883 14.0626 20.4911 14.3212 20.2671C12.32 20.0432 10.2289 19.2705 10.2289 15.844C10.2289 14.8698 10.5774 14.0635 11.1508 13.4364C11.0609 13.2125 10.7461 12.2943 11.2408 11.0625C11.2408 11.0625 11.994 10.8273 13.7141 11.9807C14.4336 11.7792 15.1981 11.6784 15.9626 11.6784C16.7271 11.6784 17.4916 11.7792 18.2111 11.9807C19.9312 10.8161 20.6845 11.0625 20.6845 11.0625C21.1792 12.2943 20.8644 13.2125 20.7744 13.4364C21.3478 14.0635 21.6963 14.8586 21.6963 15.844C21.6963 19.2817 19.594 20.0432 17.5928 20.2671C17.9188 20.5471 18.1999 21.0846 18.1999 21.9244C18.1999 23.1226 18.1887 24.0856 18.1887 24.3879C18.1887 24.6231 18.3573 24.903 18.807 24.8134C22.3596 23.6265 24.9342 20.2671 24.9342 16.3143C24.9342 11.3648 20.9093 7.35602 15.9401 7.35602Z" />
+                        </svg>
+                    </a>
+                    <a class="overlay__social-link" href="https://www.behance.net/dylunez" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg class="overlay__social-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                            fill="none">
+                            <path
+                                d="M13.378 11.1882C14.9479 11.1882 15.9756 12.0812 15.9756 13.8933C15.9756 15.699 14.4743 15.821 14.461 15.822C16.4571 15.8221 16.2549 18.1902 16.2549 18.1902C16.2548 21.2815 13.503 21.1941 13.503 21.1941H8.00006V11.1795L13.378 11.1882ZM20.5079 13.6834C24.0096 13.6835 24.0098 16.6876 24.0098 17.6892H19.0069C19.0069 19.6922 20.5079 19.6922 20.5079 19.6922C22.0014 19.692 22.0088 18.2044 22.0089 18.1902H24.0098C24.0097 21.1809 20.5395 21.194 20.5079 21.1941C16.5252 21.1941 16.7526 17.4759 16.7549 17.4392C16.7549 17.4392 16.7491 13.6834 20.5079 13.6834ZM10.001 19.6922H13.003C13.2191 19.6922 14.5038 19.6766 14.504 18.1902C14.504 16.7035 13.003 16.6873 13.003 16.6873H10.001V19.6922ZM20.5079 15.1853C18.974 15.1853 19.0069 16.6882 19.0069 16.6882H22.0089C22.0089 16.6882 22.0411 15.1855 20.5079 15.1853ZM10.001 15.1853H12.753C12.763 15.1853 13.6944 15.1783 13.6944 13.9187C13.6942 12.7035 12.7626 12.6816 12.753 12.6814H10.001V15.1853ZM22.5089 12.1814V13.1824H18.5069V12.1814H22.5089Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="section hero">
+            <div class="hero__content-wrap">
+                <div class="hero__overview">
+                    <h2 class="hero__title">El diseño <br>está en todo</h2>
+                    <p class="hero__description">moldeando la forma en que experimentamos el mundo</p>
+                </div>
+                <img class="hero__img" src="/assets/images/hero-img-1.png" alt="Ilustración">
+            </div>
+        </section>
+        <section id="about" class="section about">
+            <div class="about__content-wrap">
+                <div class="about__overview">
+                    <h2 class="about__title">Hola, <br>soy Dylan —</h2>
+                    <h2 class="about__subtitle"><span>Diseñador UI</span> enfocado en Sistemas de Diseño</h2>
+                    <p class="about__description">
+                        Me dedico a crear y optimizar interfaces, construir librerías de componentes y documentar sistemas que mejoren la colaboración entre diseño y desarrollo.
+                    </p>
+                </div>
+                <img class="about__img" src="/assets/images/about-dylunez.webp" alt="">
+            </div>
+        </section>
+        <section id="services" class="section services">
+            <div class="services__content-wrap">
+                <h2 class="services__title">Cómo puedo ayudarte</h2>
+                <div class="services__cards-wrap">
+                    <div class="service-card">
+                        <h3 class="service-card__title">Mejoro la experiencia de tu producto</h3>
+                        <p class="service-card__description">
+                            Identifico puntos de fricción y diseño soluciones centradas en los usuarios, para que tu producto tenga una experiencia más fluida y agradable.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3 class="service-card__title">Diseñar la interfaz de tu producto</h3>
+                        <p class="service-card__description">
+                            Desde el wireframe hasta los prototipos interactivos, puedo diseñarte una interfaz intuitiva, accesible y alineada con los objetivos de tu negocio.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3 class="service-card__title">Construir tu Sistema de Diseño</h3>
+                        <p class="service-card__description">
+                            Para establecer una documentación clara que unifique la comunicación entre tus equipos y te permita escalar tus productos eficientemente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section projects">
+            <div class="projects__content-wrap">
+                <div class="projects__title-scroll">
+                    <div class="projects__title-wrap">
+                        <h2 class="projects__title">Mis proyectos</h2>
+                    </div>
+                </div>
+                <div class="projects__cards-wrap">
+                    <a class="project-card" href="https://www.behance.net/gallery/203670161/Legere-UX-Writing-Case-Study" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="project-card__head">
+                            <h3 class="project-card__title">Legere</h3>
+                            <div class="project-card__icons">
+                                <svg class="project-card__icon-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.0572 9.72378C19.5779 9.20308 20.4221 9.20308 20.9428 9.72378L26.2761 15.0571C26.7968 15.5778 26.7968 16.422 26.2761 16.9427L20.9428 22.2761C20.4221 22.7968 19.5779 22.7968 19.0572 22.2761C18.5365 21.7554 18.5365 20.9111 19.0572 20.3904L22.1144 17.3333H6.66666C5.93028 17.3333 5.33333 16.7363 5.33333 15.9999C5.33333 15.2635 5.93028 14.6666 6.66666 14.6666H22.1144L19.0572 11.6094C18.5365 11.0887 18.5365 10.2445 19.0572 9.72378Z" />
+                                </svg>
+                                <svg class="project-card__icon-link" xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <path
+                                        d="M4 24V10.6667C4 9.6058 4.42173 8.58869 5.17188 7.83854C5.92202 7.0884 6.93913 6.66667 8 6.66667H16C16.7364 6.66667 17.3333 7.26362 17.3333 8C17.3333 8.73638 16.7364 9.33333 16 9.33333H8C7.64638 9.33333 7.30734 9.47391 7.05729 9.72396C6.80724 9.97401 6.66667 10.313 6.66667 10.6667V24L6.67318 24.1315C6.70343 24.4368 6.83843 24.7239 7.05729 24.9427C7.30734 25.1928 7.64638 25.3333 8 25.3333H21.3333C21.687 25.3333 22.026 25.1928 22.276 24.9427C22.5261 24.6927 22.6667 24.3536 22.6667 24V16C22.6667 15.2636 23.2636 14.6667 24 14.6667C24.7364 14.6667 25.3333 15.2636 25.3333 16V24C25.3333 25.0609 24.9116 26.078 24.1615 26.8281C23.4113 27.5783 22.3942 28 21.3333 28H8C6.93913 28 5.92202 27.5783 5.17188 26.8281C4.42173 26.078 4 25.0609 4 24ZM28 12C28 12.7364 27.403 13.3333 26.6667 13.3333C25.9303 13.3333 25.3333 12.7364 25.3333 12V8.55208L15.6094 18.276C15.0887 18.7967 14.2447 18.7967 13.724 18.276C13.2033 17.7553 13.2033 16.9113 13.724 16.3906L23.4479 6.66667H20C19.2636 6.66667 18.6667 6.06971 18.6667 5.33333C18.6667 4.59695 19.2636 4 20 4H26.6667C27.403 4 28 4.59695 28 5.33333V12Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="project-card__description">
+                            El proyecto buscaba definir un tono y voz para app y establecer una guía de contenidos. Sin embargo, en paralelo logré crear una librería de componentes con una base visual sólida y en sintonía con la personalidad del producto.
+                        </p>
+                        <div class="project-card__chips">
+                            <p class="chip">UX Writing</p>
+                            <p class="chip">UI Design</p>
+                            <p class="chip">UI Kit</p>
+                            <p class="chip">UX Design</p>
+                            <p class="chip">Mobile</p>
+                        </div>
+                    </a>
+                    <a class="project-card" href="https://www.behance.net/gallery/192923115/BNA-UI-Kit" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="project-card__head">
+                            <h3 class="project-card__title">BNA+</h3>
+                            <div class="project-card__icons">
+                                <svg class="project-card__icon-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.0572 9.72378C19.5779 9.20308 20.4221 9.20308 20.9428 9.72378L26.2761 15.0571C26.7968 15.5778 26.7968 16.422 26.2761 16.9427L20.9428 22.2761C20.4221 22.7968 19.5779 22.7968 19.0572 22.2761C18.5365 21.7554 18.5365 20.9111 19.0572 20.3904L22.1144 17.3333H6.66666C5.93028 17.3333 5.33333 16.7363 5.33333 15.9999C5.33333 15.2635 5.93028 14.6666 6.66666 14.6666H22.1144L19.0572 11.6094C18.5365 11.0887 18.5365 10.2445 19.0572 9.72378Z" />
+                                </svg>
+                                <svg class="project-card__icon-link" xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <path
+                                        d="M4 24V10.6667C4 9.6058 4.42173 8.58869 5.17188 7.83854C5.92202 7.0884 6.93913 6.66667 8 6.66667H16C16.7364 6.66667 17.3333 7.26362 17.3333 8C17.3333 8.73638 16.7364 9.33333 16 9.33333H8C7.64638 9.33333 7.30734 9.47391 7.05729 9.72396C6.80724 9.97401 6.66667 10.313 6.66667 10.6667V24L6.67318 24.1315C6.70343 24.4368 6.83843 24.7239 7.05729 24.9427C7.30734 25.1928 7.64638 25.3333 8 25.3333H21.3333C21.687 25.3333 22.026 25.1928 22.276 24.9427C22.5261 24.6927 22.6667 24.3536 22.6667 24V16C22.6667 15.2636 23.2636 14.6667 24 14.6667C24.7364 14.6667 25.3333 15.2636 25.3333 16V24C25.3333 25.0609 24.9116 26.078 24.1615 26.8281C23.4113 27.5783 22.3942 28 21.3333 28H8C6.93913 28 5.92202 27.5783 5.17188 26.8281C4.42173 26.078 4 25.0609 4 24ZM28 12C28 12.7364 27.403 13.3333 26.6667 13.3333C25.9303 13.3333 25.3333 12.7364 25.3333 12V8.55208L15.6094 18.276C15.0887 18.7967 14.2447 18.7967 13.724 18.276C13.2033 17.7553 13.2033 16.9113 13.724 16.3906L23.4479 6.66667H20C19.2636 6.66667 18.6667 6.06971 18.6667 5.33333C18.6667 4.59695 19.2636 4 20 4H26.6667C27.403 4 28 4.59695 28 5.33333V12Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="project-card__description">
+                            Realicé una auditoría UI en la app que dectectó problemas de accesibilidad, consistencia y jerarquía visual. A partir de eso, elaboré un UI Kit enfocado en solucionar estos problemas y con bases sólidas para poder aplicar mejoras a futuro.                        </p>
+                        <div class="project-card__chips">
+                            <p class="chip">UI Design</p>
+                            <p class="chip">UI Kit</p>
+                            <p class="chip">Mobile</p>
+                        </div>
+                    </a>
+                    <a class="project-card" href="https://www.behance.net/gallery/141531317/Disney-UX-Case-Study"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="project-card__head">
+                            <h3 class="project-card__title">Disney+</h3>
+                            <div class="project-card__icons">
+                                <svg class="project-card__icon-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.0572 9.72378C19.5779 9.20308 20.4221 9.20308 20.9428 9.72378L26.2761 15.0571C26.7968 15.5778 26.7968 16.422 26.2761 16.9427L20.9428 22.2761C20.4221 22.7968 19.5779 22.7968 19.0572 22.2761C18.5365 21.7554 18.5365 20.9111 19.0572 20.3904L22.1144 17.3333H6.66666C5.93028 17.3333 5.33333 16.7363 5.33333 15.9999C5.33333 15.2635 5.93028 14.6666 6.66666 14.6666H22.1144L19.0572 11.6094C18.5365 11.0887 18.5365 10.2445 19.0572 9.72378Z" />
+                                </svg>
+                                <svg class="project-card__icon-link" xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <path
+                                        d="M4 24V10.6667C4 9.6058 4.42173 8.58869 5.17188 7.83854C5.92202 7.0884 6.93913 6.66667 8 6.66667H16C16.7364 6.66667 17.3333 7.26362 17.3333 8C17.3333 8.73638 16.7364 9.33333 16 9.33333H8C7.64638 9.33333 7.30734 9.47391 7.05729 9.72396C6.80724 9.97401 6.66667 10.313 6.66667 10.6667V24L6.67318 24.1315C6.70343 24.4368 6.83843 24.7239 7.05729 24.9427C7.30734 25.1928 7.64638 25.3333 8 25.3333H21.3333C21.687 25.3333 22.026 25.1928 22.276 24.9427C22.5261 24.6927 22.6667 24.3536 22.6667 24V16C22.6667 15.2636 23.2636 14.6667 24 14.6667C24.7364 14.6667 25.3333 15.2636 25.3333 16V24C25.3333 25.0609 24.9116 26.078 24.1615 26.8281C23.4113 27.5783 22.3942 28 21.3333 28H8C6.93913 28 5.92202 27.5783 5.17188 26.8281C4.42173 26.078 4 25.0609 4 24ZM28 12C28 12.7364 27.403 13.3333 26.6667 13.3333C25.9303 13.3333 25.3333 12.7364 25.3333 12V8.55208L15.6094 18.276C15.0887 18.7967 14.2447 18.7967 13.724 18.276C13.2033 17.7553 13.2033 16.9113 13.724 16.3906L23.4479 6.66667H20C19.2636 6.66667 18.6667 6.06971 18.6667 5.33333C18.6667 4.59695 19.2636 4 20 4H26.6667C27.403 4 28 4.59695 28 5.33333V12Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="project-card__description">
+                            Elabore una propuesta de mejora en el flujo de búsqueda de Disney+, donde detecté problemas técnicos y de usabilidad que impedían a los usuarios buscar contenido con eficiencia.                        </p>
+                        <div class="project-card__chips">
+                            <p class="chip">UX Design</p>
+                            <p class="chip">Mobile</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section contact">
+            <div class="contact__content-wrap">
+                <img class="contact__ornament" src="/assets/images/contact-graphic.png" alt="Ornamento decorativo">
+                <div class="contact__overview">
+                    <h2 class="contact__title">Si buscas un diseñador</h2>
+                    <a class="btn contact__btn" href="https://www.linkedin.com/in/dylunez/" target="_blank"
+                        rel="noopener noreferrer">¡Contáctame!</a>
+                </div>
+            </div>
+        </section>
+        <section class="section phrase">
+            <div class="phrase__content-wrap">
+                <p class="phrase__text">
+                    El buen diseño, cuando está bien hecho, se vuelve invisible.
+                </p>
+                <p class="phrase__author">- Jared Spool</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__username">@dylunez</p>
+        <div class="footer__social-media">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/dylunez/" target="_blank"
+                rel="noopener noreferrer">
+                <svg class="footer__social-link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 32 32" fill="none">
+                    <path
+                        d="M12.3191 22.4843V13.8402H9.44844V22.4843H12.3194H12.3191ZM10.8844 12.6602C11.8852 12.6602 12.5083 11.9964 12.5083 11.1669C12.4895 10.3185 11.8852 9.67322 10.9034 9.67322C9.92091 9.67322 9.27924 10.3185 9.27924 11.1668C9.27924 11.9963 9.9021 12.6601 10.8655 12.6601H10.8841L10.8844 12.6602ZM13.908 22.4843H16.7784V17.6575C16.7784 17.3995 16.7971 17.1409 16.873 16.9566C17.0804 16.4402 17.5527 15.9057 18.3459 15.9057C19.3843 15.9057 19.8 16.6983 19.8 17.8604V22.4843H22.6703V17.528C22.6703 14.873 21.2543 13.6375 19.3658 13.6375C17.8174 13.6375 17.1373 14.5037 16.7595 15.0937H16.7786V13.8405H13.9081C13.9456 14.6514 13.9079 22.4846 13.9079 22.4846L13.908 22.4843Z"
+                        fill="#FFFFFF" />
+                </svg>
+            </a>
+            <a class="footer__social-link" href="https://github.com/dylunez" target="_blank" rel="noopener noreferrer">
+                <svg class="footer__social-link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 32 32" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.9401 7.35602C10.9709 7.35602 6.94611 11.3648 6.94611 16.3143C6.94611 20.2783 9.52065 23.6265 13.0958 24.8134C13.5455 24.8918 13.7141 24.6231 13.7141 24.3879C13.7141 24.1752 13.7029 23.4697 13.7029 22.7194C11.4431 23.1338 10.8585 22.1707 10.6786 21.6668C10.5774 21.4093 10.139 20.6142 9.75674 20.4015C9.44195 20.2335 8.99225 19.8192 9.7455 19.808C10.4538 19.7968 10.9597 20.4575 11.1283 20.7262C11.9378 22.0812 13.2307 21.7004 13.7478 21.4653C13.8265 20.883 14.0626 20.4911 14.3212 20.2671C12.32 20.0432 10.2289 19.2705 10.2289 15.844C10.2289 14.8698 10.5774 14.0635 11.1508 13.4364C11.0609 13.2125 10.7461 12.2943 11.2408 11.0625C11.2408 11.0625 11.994 10.8273 13.7141 11.9807C14.4336 11.7792 15.1981 11.6784 15.9626 11.6784C16.7271 11.6784 17.4916 11.7792 18.2111 11.9807C19.9312 10.8161 20.6845 11.0625 20.6845 11.0625C21.1792 12.2943 20.8644 13.2125 20.7744 13.4364C21.3478 14.0635 21.6963 14.8586 21.6963 15.844C21.6963 19.2817 19.594 20.0432 17.5928 20.2671C17.9188 20.5471 18.1999 21.0846 18.1999 21.9244C18.1999 23.1226 18.1887 24.0856 18.1887 24.3879C18.1887 24.6231 18.3573 24.903 18.807 24.8134C22.3596 23.6265 24.9342 20.2671 24.9342 16.3143C24.9342 11.3648 20.9093 7.35602 15.9401 7.35602Z"
+                        fill="#FFFFFF" />
+                </svg>
+            </a>
+            <a class="footer__social-link" href="https://www.behance.net/dylunez" target="_blank"
+                rel="noopener noreferrer">
+                <svg class="footer__social-link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 32 32" fill="none">
+                    <path
+                        d="M13.378 11.1882C14.9479 11.1882 15.9756 12.0812 15.9756 13.8933C15.9756 15.699 14.4743 15.821 14.461 15.822C16.4571 15.8221 16.2549 18.1902 16.2549 18.1902C16.2548 21.2815 13.503 21.1941 13.503 21.1941H8.00006V11.1795L13.378 11.1882ZM20.5079 13.6834C24.0096 13.6835 24.0098 16.6876 24.0098 17.6892H19.0069C19.0069 19.6922 20.5079 19.6922 20.5079 19.6922C22.0014 19.692 22.0088 18.2044 22.0089 18.1902H24.0098C24.0097 21.1809 20.5395 21.194 20.5079 21.1941C16.5252 21.1941 16.7526 17.4759 16.7549 17.4392C16.7549 17.4392 16.7491 13.6834 20.5079 13.6834ZM10.001 19.6922H13.003C13.2191 19.6922 14.5038 19.6766 14.504 18.1902C14.504 16.7035 13.003 16.6873 13.003 16.6873H10.001V19.6922ZM20.5079 15.1853C18.974 15.1853 19.0069 16.6882 19.0069 16.6882H22.0089C22.0089 16.6882 22.0411 15.1855 20.5079 15.1853ZM10.001 15.1853H12.753C12.763 15.1853 13.6944 15.1783 13.6944 13.9187C13.6942 12.7035 12.7626 12.6816 12.753 12.6814H10.001V15.1853ZM22.5089 12.1814V13.1824H18.5069V12.1814H22.5089Z"
+                        fill="#FFFFFF" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

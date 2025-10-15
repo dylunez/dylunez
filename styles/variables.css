@@ -1,0 +1,41 @@
+:root {
+    /* NEUTRAL COLOR */
+    --color--neutral-00: #FFFFFF;
+    --color--neutral-01: #EDEFF2;
+    --color--neutral-02: #DBDFE5;
+    --color--neutral-03: #CAD0D8;
+    --color--neutral-04: #BEC4D0;
+    --color--neutral-05: #3D4451;
+    --color--neutral-06: #22272F;
+    --color--neutral-07: #191D24;
+    --color--neutral-08: #15181E;
+    --color--neutral-09: #111318;
+
+    /* PRIMARY COLOR */
+    --color--primary-05: #5C8EFF;
+    --color--primary-07: #0D28D3;
+    --color--primary-08: #0B21AD;
+    --color--primary-09: #0A1D99;
+
+
+    /* TYPOGRAPHY */
+    --font-family--display: 'Bebas Neue';
+    --font-family--display--weigth: 400;
+
+    --font-family--base: 'Urbanist', sans-serif;
+    --font-family--base--regular: 400;
+    --font-family--base--medium: 500;
+    --font-family--base--semi-bold: 600;
+
+    /* BTN SMALL */
+    --btn--small--font-size: 1rem;
+    --btn--small--line-height: 1.5rem;
+    --btn--small--padding: 0.5rem 0.5rem;
+    --btn--small--border-radius: 0.125rem;
+
+    /* BTN MEDIUM */
+    --btn--medium--font-size: 1.25rem;
+    --btn--medium--line-height: 1.5rem;
+    --btn--medium--padding: 1rem 1rem;
+    --btn--medium--border-radius: 1.125rem;
+}
