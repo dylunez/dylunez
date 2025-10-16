@@ -35,7 +35,6 @@ header {
     justify-content: center;
     width: 100%;
     background-color: var(--color--neutral-01);
-    overflow: auto;
 }
 
 .hero__content-wrap,

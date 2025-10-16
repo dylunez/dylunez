@@ -1,5 +1,3 @@
-@import url(/styles/variables.css);
-  
 /* =====================================
    GLOBAL TRANSITIONS (initial state)
 ===================================== */
@@ -78,18 +76,6 @@
   }
 }
 
-@keyframes animate--fade-right {
-  from {
-    opacity: 0;
-    transform: translateY(5rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes animate--cards {
   from {
     opacity: 0;
@@ -99,18 +85,6 @@
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes animate--cards-2 {
-  from {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
